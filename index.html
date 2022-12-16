@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/normalaze.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="header__nav nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Contacts</a>
+        </li>
+        <li class="nav__item">
+          <a href="#summary" class="nav__link">Summary</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#code" class="nav__link">Code</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#education" class="nav__link">Education</a>
+        </li>
+        <li class="nav__item">
+          <a href="#english" class="nav__link">English</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero__container">
+      <img src="./img/avatar.jpg" alt="Avatar" class="hero__avatar">
+      <div class="">
+        <h1 class="hero__title">Sergei Moskovkin</h1>
+        <p class="hero__description">Junior Front-End Developer</p>
+      </div>
+    </div>
+  </section>
+  <section class="details">
+    <div class="container">
+      <h2 class="visually-hidden details__header">Details</h2>
+      <ul class="list-reset details__list grid">
+        <li class="details__item">
+          <section class="contacts" id="contacts">
+            <h2 class="title contacts__title">Contacts</h2>
+            <ul class="list-reset list-style-02 contacts__list">
+              <li class="contacts__item address-icon">
+                <address class="contacts__address">Moscow, Russian Federation</address>
+              </li>
+              <li class="contacts__item email-icon">
+                Email: <a href="mailto:email@gmail.com">email@gmail.com</a>
+              </li>
+              <li class="contacts__item github-icon">
+                Github: <a href="https://github.com/smoskovkin" target="_blank">smoskovkin</a>
+              </li>
+              <li class="contacts__item telegram-icon">
+                Telegram: <a href="https://telegram.org//" target="_blank">@smoskovkin</a>
+              </li>
+              <li class="contacts__item discord-icon">
+                Discord: <a href="https://discord.com/" target="_blank">Sergei#6666</a>
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="summary" id="summary">
+            <h2 class="title summary__title">Summary</h2>
+            <p class="summary__text">
+              I&nbsp;like programming. It&nbsp;is&nbsp;fascinating and interesting. I&nbsp;have a&nbsp;main job,
+              programming is&nbsp;a&nbsp;hobby
+              for&nbsp;me. I&nbsp;have completed several training projects and now&nbsp;I would like to&nbsp;take part
+              in&nbsp;the
+              creation of&nbsp;a&nbsp;real JavaScript project. My&nbsp;goal is&nbsp;to&nbsp;learn a&nbsp;pure JavaScript
+              at&nbsp;a&nbsp;good
+              level and learn the React library. I&nbsp;will be&nbsp;glad to&nbsp;join the creation of&nbsp;open source
+              projects. I&nbsp;would like to&nbsp;work under the guidance of&nbsp;an&nbsp;experienced developer to&nbsp;gain
+              practical experience.
+            </p>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="skills" id="skills">
+            <h2 class="title skills__title">Skills</h2>
+            <ul class="list-reset list-style-01 skills__list">
+              <li class="skills__item">Web-development: HTML5, CSS3, JavaScript</li>
+              <li class="skills__item">Frameworks and libraries: React</li>
+              <li class="skills__item">Version control: GIT, Github</li>
+              <li class="skills__item">Graphics: Figma</li>
+            </ul>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="code" id="code">
+            <h2 class="title code__title">Code</h2>
+            <pre class="code__listing"><code>function factorial(n) {
+  if(n &lt; 0) return null;
+  if (n &lt;= 1) return 1;
+  return n * factorial(n-1);
+}</code></pre>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="courses" id="courses">
+            <h2 class="title courses__title">Courses</h2>
+            <ul class="list-reset list-style-01 courses__list">
+              <li class="courses__item">
+                Hexlet - JavaScript for beginner
+              </li>
+              <li class="courses__item">
+                LoftSchool - Comprehensive training JavaScript
+              </li>
+              <li class="courses__item">
+                Udemy - Web Development By Doing: HTML / CSS
+              </li>
+              <li class="courses__item">
+                Udemy - React + Redux - Professional Development
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="projects" id="projects">
+            <h2 class="title projects__title">Projects</h2>
+            <ul class="list-reset list-style-01 projects__list">
+              <li class="projects__item">
+                <a href="https://smoskovkin.github.io/rsschool-cv/">RS School - Curriculum Vitae</a>
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="education" id="education">
+            <h2 class="title education__title">Education</h2>
+            <p class="education__text">
+              Moscow State University of Geodesy and Cartography (MIIGAiK)
+            </p>
+          </section>
+        </li>
+        <li class="details__item">
+          <section class="english" id="english">
+            <h2 class="title english__title">English</h2>
+            <p class="english__text">
+              A1 - Beginner
+            </p>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__container">
+    <p class="footer__copyrights copyrights">
+      <span class="copyrights__text">© 2022</span>
+      <a href="https://github.com/smoskovkin" class="copyrights__link" target="_blank">smoskovkin</a>
+    </p>
+    <a href="https://rs.school/js/" class="footer__rsschool-logo" target="_blank"><img src="./img/rss.svg" alt="RS School Logo"></a>
+  </div>
+</footer>
+</body>
+</html>
