@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoLight.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoRegular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --color-white: #fff;
+  --color-primary: #4d2323;
+  --color-secondary: #829985;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-primary);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-style-01 > li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.list-style-01 > li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 100%;
+}
+
+.list-style-02 > li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.list-style-02 > li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--color-secondary)
+}
+
+.header {
+  padding: 29px 0;
+  background-color: var(--color-secondary);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.nav__link {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-white);
+}
+
+.hero {
+  padding-top: 50px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 15px solid #d7d1c9;
+}
+
+.hero__avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgb(0 0 0);
+  filter: grayscale(0.2) brightness(1.05);
+  transition: .3s;
+}
+
+.hero__title {
+  margin: 0 0 40px 0;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  line-height: 50px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__description {
+  margin: 0;
+  color: var(--color-secondary);
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+}
+
+
+.details__item {
+  padding: 26px 0 35px 0;
+}
+
+.details__item:not(:nth-last-child(-n+2)) {
+  border-bottom: 1px solid #672f2f;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__address {
+  display: inline-block;
+  font-style: normal;
+}
+
+.address-icon::before {
+  background-image: url(../img/1.svg);
+}
+
+.email-icon::before {
+  background-image: url(../img/2.svg);
+}
+
+.github-icon::before {
+  background-image: url(../img/3.svg);
+}
+
+.telegram-icon::before {
+  background-image: url(../img/4.svg);
+}
+
+.discord-icon::before {
+  background-image: url(../img/5.svg);
+}
+
+.summary__text {
+  margin: 0;
+}
+
+.skills__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.code__listing {
+  margin: 0;
+}
+
+.courses__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.projects__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.education__text {
+  margin: 0;
+}
+
+.english__text {
+  margin: 0;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: var(--color-secondary);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyrights {
+  margin: 0;
+  color: var(--color-white);
+}
+
+.footer__rsschool-logo {
+  width: 121px;
+  height: 45px;
+}
+
+.copyrights__text {
+  margin-right: 12px;
+}
+
+.copyrights__link {
+  font-size: 20px;
+  font-weight: 300;
+}
